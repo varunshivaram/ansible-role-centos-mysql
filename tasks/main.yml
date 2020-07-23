@@ -21,7 +21,7 @@
       enabled: yes
 
 - name: install required python MySQLdb lib to create databases and users
-  yum: name={{item}} state=present
+  yum: name={{ item }} state=present
   with_items:
       - gcc-c++
       - MySQL-python
